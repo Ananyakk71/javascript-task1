@@ -51,11 +51,51 @@ function safeParse(jsonString){
         return JSON.parse(jsonString)
     } 
     catch {
-        return `error message `
+        return `error: message `
     }
 }
 
 console.log(safeParse(899))
 console.log(safeParse("hello"))
+
+
+//Question 7
+
+
+
+
+function findTwoSum(nums, target){
+    for(let i = 0; i<= nums.length; i++){
+        for(let j = 0; j<= nums.length; j++){
+            if(nums[i] + nums[j] == target){
+                return [i, j]
+            }
+        }
+    }
+}
+
+console.log(findTwoSum([2,4,5],6));
+
+
+
+
+//Question 3
+
+
+
+ /*const URLs = [
+    {
+        name: 'one',
+        url: 'https://www.istockphoto.com/photos/panda'
+    },
+    {
+        name: 'two',
+        url: 'https://www.istockphoto.com/photos/teddy'
+    },
+    {
+        name: 'three',
+        url: 'https://www.istockphoto.com/photos/butterfly'
+    }
+]*/
 
 
