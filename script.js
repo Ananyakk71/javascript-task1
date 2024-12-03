@@ -62,8 +62,6 @@ console.log(safeParse("hello"))
 //Question 7
 
 
-
-
 function findTwoSum(nums, target){
     for(let i = 0; i<= nums.length; i++){
         for(let j = 0; j<= nums.length; j++){
@@ -75,27 +73,24 @@ function findTwoSum(nums, target){
 }
 
 console.log(findTwoSum([2,4,5],6));
+console.log(findTwoSum([1,2,3,4],7));
 
+//Question 1
 
-
-
-//Question 3
-
-
-
- /*const URLs = [
-    {
-        name: 'one',
-        url: 'https://www.istockphoto.com/photos/panda'
-    },
-    {
-        name: 'two',
-        url: 'https://www.istockphoto.com/photos/teddy'
-    },
-    {
-        name: 'three',
-        url: 'https://www.istockphoto.com/photos/butterfly'
+function isPalindrome(str) {
+    let j = str.length - 1;
+    for (let i=0; i < j / 2; i++) {
+        let x = str[i];
+        let y = str[j-i];
+        if (x == y) {
+            return true
+        } else {
+            return false
+        }
     }
-]*/
+}
+
+console.log(isPalindrome("malayalam"));
+console.log(isPalindrome("apple"));
 
 
