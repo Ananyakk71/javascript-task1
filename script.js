@@ -1,3 +1,22 @@
+//Question 1
+
+function isPalindrome(str) {
+    let j = str.length - 1;
+    for (let i=0; i < j / 2; i++) {
+        let x = str[i];
+        let y = str[j-i];
+        if (x == y) {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+console.log(isPalindrome("malayalam"));
+console.log(isPalindrome("apple"));
+
+
 //question 5
 
 function counter() {
@@ -75,22 +94,5 @@ function findTwoSum(nums, target){
 console.log(findTwoSum([2,4,5],6));
 console.log(findTwoSum([1,2,3,4],7));
 
-//Question 1
-
-function isPalindrome(str) {
-    let j = str.length - 1;
-    for (let i=0; i < j / 2; i++) {
-        let x = str[i];
-        let y = str[j-i];
-        if (x == y) {
-            return true
-        } else {
-            return false
-        }
-    }
-}
-
-console.log(isPalindrome("malayalam"));
-console.log(isPalindrome("apple"));
 
 
